@@ -4,6 +4,8 @@
 
 ClassicWB P96 Package contains ClassicWB P96 v28 created by Bloodwych from EAB.
 
+ClassicWB P96 is a feature rich Workbench enhancement by Bloodwych targeted UAE emulator using 16-32bit colour screenmodes and NewIcons.
+
 With permission from Bloodwych it's been converted to a package for HstWB Installer.
 
 Original version of ClassicWB P96 can be downloaded from http://classicwb.abime.net/.
