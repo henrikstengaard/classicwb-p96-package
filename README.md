@@ -14,6 +14,8 @@ Original version of ClassicWB P96 can be downloaded from http://classicwb.abime.
 
 Download latest release from https://github.com/henrikstengaard/classicwb-p96-package/releases and copy it to HstWB Installer "packages" directory, which typically is "c:\Program Files (x86)\HstWB Installer\Packages".
 
+Installation through HstWB Installer will present dialogs to customize ClassicWB installation.
+
 ## Modifications
 
 ClassicWB is installed from a zip file containing all files from ClassicWB System.hdf.

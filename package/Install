@@ -2,7 +2,7 @@
 ; -----------------------------------------
 ;
 ; Author: Henrik Noerfjand Stengaard 
-; Date: 2017-03-24
+; Date: 2017-03-28
 ;
 ; This script extracts and installs ClassicWB P96 v28 created by Bloodwych from EAB.
 ; With permission from Bloodwych it's been converted to a package for HstWB Installer.
@@ -14,6 +14,19 @@
 ; - Removed all "press enter to continue" expect last one used after installation complete message is shown.
 ; - Removed and reduced waits.
 ; - Adjusted text spacing.
+
+
+; Copy readme and screenshots to locale help for ClassicWB P96
+IF NOT EXISTS SYSTEMDIR:Locale/Help/ClassicWB-P96
+  makepath >NIL: SYSTEMDIR:Locale/Help/ClassicWB-P96
+ENDIF
+copy >NIL: PACKAGEDIR:README SYSTEMDIR:Locale/Help/ClassicWB-P96
+copy >NIL: PACKAGEDIR:README.guide SYSTEMDIR:Locale/Help/ClassicWB-P96
+copy >NIL: PACKAGEDIR:README.info SYSTEMDIR:Locale/Help/ClassicWB-P96
+IF NOT EXISTS SYSTEMDIR:Locale/Help/ClassicWB-P96/screenshots
+  makepath >NIL: SYSTEMDIR:Locale/Help/ClassicWB-P96/screenshots
+ENDIF
+copy >NIL: PACKAGEDIR:screenshots/#?.iff SYSTEMDIR:Locale/Help/ClassicWB-P96/screenshots
 
 
 ; Extract classicwb p96 v28 zip to systemdir
