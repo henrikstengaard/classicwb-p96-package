@@ -6,7 +6,7 @@ ClassicWB P96 is a feature rich Workbench enhancement by Bloodwych targeted UAE 
 
 ClassicWB P96 Package contains ClassicWB P96 v28 created by Bloodwych from EAB.
 
-With permission from Bloodwych it's been converted to a package for HstWB Installer.
+With permission from Bloodwych it has been converted to a package for HstWB Installer.
 
 Original version of ClassicWB P96 can be downloaded from http://classicwb.abime.net/.
 
