@@ -1,6 +1,7 @@
 {
+    "selectionId": "classicwb",
     "name": "ClassicWB P96",
-    "version": "28.0.2",
+    "version": "28.0.3",
     "priority": 1,
     "assigns":
     [
