@@ -1,7 +1,11 @@
 {
-    "selectionId": "classicwb",
+    "selectionIds":
+    [
+        "classicwb",
+        "amigaos"
+    ],
     "name": "ClassicWB P96",
-    "version": "28.0.3",
+    "version": "28.0.4",
     "priority": 1,
     "assigns":
     [
