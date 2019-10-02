@@ -1,4 +1,0 @@
-IF EXISTS SYSTEMDIR:C/AntiClick
-  Rename SYSTEMDIR:C/AntiClick SYSTEMDIR:C/AntiClick_disabled
-ELSE
-EndIF
