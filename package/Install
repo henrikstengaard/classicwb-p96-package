@@ -2,7 +2,7 @@
 ; -----------------------------------------
 ;
 ; Author: Henrik Noerfjand Stengaard 
-; Date: 2019-10-02
+; Date: 2019-17-02
 ;
 ; This script extracts and installs ClassicWB P96 v28 created by Bloodwych from EAB.
 ; With permission from Bloodwych it's been converted to a package for HstWB Installer.
@@ -115,6 +115,12 @@ IF "$amigaosversion" EQ "3.1.4"
       Delete >NIL: SYSTEMDIR:Prefs/Env-Archive/FBlit.cfg
     ENDIF
   ENDIF
+
+  ; copy scalos patches to systemdir
+  Copy >NIL: PACKAGEDIR:Patches/Scalos/#? SYSTEMDIR: ALL
+
+  ; copy workbench pattern to prefs
+  Copy >NIL: PACKAGEDIR:Patches/WBPattern.prefs SYSTEMDIR:Prefs/Env-Archive/Sys
 ELSE
   ; extract classicwb p96
   unzip -qq -o -x PACKAGEDIR:classicwb_p96_v28.zip -d SYSTEMDIR:
@@ -122,12 +128,6 @@ ELSE
   ; copy startup-sequence for amiga os 3.1
   Copy >NIL: PACKAGEDIR:Patches/Startup-Sequence.3.1 SYSTEMDIR:S/Startup-Sequence
 ENDIF
-
-; copy scalos patches to systemdir
-Copy >NIL: PACKAGEDIR:Patches/Scalos/#? SYSTEMDIR: ALL
-
-; copy workbench pattern to prefs
-Copy >NIL: PACKAGEDIR:Patches/WBPattern.prefs SYSTEMDIR:Prefs/Env-Archive/Sys
 
 ; Copy scsi device
 IF EXISTS DEVS:scsi.device
