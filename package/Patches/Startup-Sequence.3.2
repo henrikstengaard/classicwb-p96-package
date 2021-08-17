@@ -1,17 +1,17 @@
 ;ClassicWB Startup-Sequence
 ;--------------------------
 ;P96 UAE
-;Amiga OS 3.1.4
+;Amiga OS 3.2
+
+; Execute Amiga OS 3.2 startup, if it exists
+IF EXISTS "S:Amiga-OS-32-Startup"
+  Execute "S:Amiga-OS-32-Startup"
+ENDIF
 
 ; set failat to 21
 FailAt 21
 
 If Exists C:LoadModule
-  C:Version exec.library version 46 >NIL:
-  If Warn
-    C:LoadModule ROMUPDATE
-  EndIf
-
   ; load scsi.device, if it exists
   IF EXISTS DEVS:scsi.device
     ; load scsi.device, if current scsi.device is less than v43.45
