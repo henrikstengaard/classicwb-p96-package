@@ -58,11 +58,15 @@ The install script for HstWB Installer is based on S/Startup-Sequence from Class
 
 ## Screenshots
 
-Screenshots of ClassicWB P96 from http://classicwb.abime.net/classicweb/p96pics.htm.
+Screenshots of ClassicWB P96 installed with Amiga OS 3.2.
 
 ![ClassicWB P96 3.2 1](screenshots/classicwb_p96_3.2_1.png?raw=true)
 
+Screenshots of ClassicWB P96 installed with Amiga OS 3.1.4.
+
 ![ClassicWB P96 3.1.4 1](screenshots/classicwb_p96_3.1.4_1.png?raw=true)
+
+Screenshots of ClassicWB P96 from http://classicwb.abime.net/classicweb/p96pics.htm.
 
 ![ClassicWB P96 1](screenshots/classicwb_p96_1.png?raw=true)
 
